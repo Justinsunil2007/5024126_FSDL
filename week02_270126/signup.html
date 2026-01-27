@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Hub - Sign Up</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: url('https://wallpapers-clan.com/wp-content/uploads/2024/06/anime-characters-collage-fun-desktop-wallpaper-preview.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 16px;
+        }
+
+        /* Container for the Form */
+        .signup-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .signup-container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f2c800;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .signup-container p {
+            font-size: 0.9rem;
+            color: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        .signup-container input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 2px solid #444;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .signup-container input:focus {
+            border-color: #f2c800;
+            background-color: #444;
+        }
+
+        /* Submit Button */
+        .signup-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #f2c800;
+            color: #333;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .signup-container button:hover {
+            background-color: #ffcb00;
+            transform: scale(1.05);
+        }
+
+        /* Links */
+        .signup-container a {
+            color: #f2c800;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .signup-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Anime-themed Section */
+        .anime-logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .anime-logo img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <div class="anime-logo">
+            <img src="https://img.freepik.com/premium-photo/unique-anime-logo-collection_1046319-126978.jpg" alt="Anime Logo">
+        </div>
+        <h1>Sign Up to Anime Hub</h1>
+        <p>Join the community of anime lovers and stay updated!</p>
+
+        <form action="#">
+            <input type="text" placeholder="Username" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="password" placeholder="Confirm Password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <p>Already have an account? <a href="#">Login here</a></p>
+    </div>
+
+</body>
+</html>
