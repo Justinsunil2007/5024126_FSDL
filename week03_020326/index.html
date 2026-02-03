@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ANIME HUB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background-color: #0b0b0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #000;
+      box-shadow: 0 0 15px #ff4ecd;
+    }
+
+    .navbar-brand {
+      color: #ff4ecd !important;
+      font-weight: bold;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+    }
+
+    .nav-link {
+      color: white !important;
+      margin-right: 15px;
+    }
+
+    .nav-link:hover {
+      color: #ff4ecd !important;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      text-align: center;
+      margin: 50px 0 30px;
+      color: #ff4ecd;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* BOOK CARDS */
+    .book-card {
+      background: #111;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 78, 205, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .book-card:hover {
+      transform: scale(1.05);
+    }
+
+    .book-card img {
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .price {
+      color: #00f5ff;
+      font-weight: bold;
+    }
+
+    .btn-anime {
+      background: #ff4ecd;
+      border: none;
+      color: white;
+    }
+
+    .btn-anime:hover {
+      background: #ff77dd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔥 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">ANIME HUB</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#animeNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="animeNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Books">Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="#merchandise">Merchandise</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="signin.html">signin</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 📚 GOODIES SECTION -->
+<section id="Books" class="container">
+  <h2 class="section-title">📚 ANIME BOOK STORE 📚</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src="https://www.imdb.com/title/tt0409591/mediaviewer/rm4049555200/">
+        <div class="card-body">
+          <h5>Naruto Vol. 1</h5>
+          <p>Start of Naruto Uzumaki’s ninja journey.</p>
+          <p class="price">₹399</p>
+          <button class="btn btn-anime w-100 buy-btn" data-book="Naruto Vol. 1">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="card book-card">
+        <img src=https://www.crunchyroll.com/hi/news/features/2025/4/1/solo-leveling-episode-25-recap?srsltid=AfmBOoo3u1vCKJtAeWCkA5SAAuM-UI2JJSCk9O9vxdDRU3xh6Ldb3tNw>
+        <div class="card-body">
+          <h5>Solo Leveling</h5>
+          <p>Follows the journey of a low-ranked player who gains power through a mysterious system.</p>
+          <p class="price">₹399</p>
+          <button class="btn btn-anime w-100 buy-btn" data-book="Solo Leveling">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src=https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvAzMxVb7pQUlHGjtC8do83vd-UClldQQivBaI3Dq1ny95Ewf4>
+        <div class="card-body">
+          <h5>Attack on Titan</h5>
+          <p>Humanity’s fight for survival.</p>
+          <p class="price">₹499</p>
+          <button class="btn btn-anime w-100 buy-btn" data-book="Attack on Titan">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src=https://screenrant.com/demon-slayer-manga-short-ending-good-op-edition/_next/image?url=https%3A%2F%2Fstatic1.srcdn.com%2Fwordpress%2Fwp-content%2Fuploads%2F2020%2F10%2FDemon-Slayer-Manga-Volume-23-Cover.jpg&w=1920&q=75>
+        <div class="card-body">
+          <h5>Demon Slayer</h5>
+          <p>Tanjiro’s battle against demons.</p>
+          <p class="price">₹450</p>
+          <button class="btn btn-anime w-100 buy-btn" data-book="Demon Slayer">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- 👕 MERCHANDISE SECTION -->
+<section id="merchandise" class="container">
+  <h2 class="section-title">👕 ANIME CLOTHING 👕</h2>
+
+  <div class="row g-4">
+
+    <!-- Item 1 -->
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src="https://via.placeholder.com/300x400?text=Naruto+T-Shirt">
+        <div class="card-body">
+          <h5>Naruto T-Shirt</h5>
+          <p>Premium cotton anime printed T-shirt.</p>
+          <p class="price">₹799</p>
+          <button class="btn btn-anime w-100 buy-btn" data-book="Naruto T-Shirt">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src="https://via.placeholder.com/300x400?text=Attack+on+Titan+Hoodie">
+        <div class="card-body">
+          <h5>Attack on Titan Hoodie</h5>
+          <p>Warm hoodie with Survey Corps logo.</p>
+          <p class="price">₹1,499</p>
+          <button class="btn btn-anime w-100 buy-btn" data-book="AOT Hoodie">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="col-md-4">
+      <div class="card book-card">
+        <img src="https://via.placeholder.com/300x400?text=Demon+Slayer+Jacket">
+        <div class="card-body">
+          <h5>Demon Slayer Jacket</h5>
+          <p>Stylish jacket inspired by Demon Slayer.</p>
+          <p class="price">₹1,999</p>
+          <button class="btn btn-anime w-100 buy-btn" data-book="Demon Slayer Jacket">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- External JS -->
+<script src="index.js"></script>
+
+</body>
+</html>
