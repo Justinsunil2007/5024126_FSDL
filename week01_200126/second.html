@@ -1,8 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>HALL TICKET</title>
+<!DOCTYPE html> <!-- ✅ HTML5 ELEMENT (doctype declaration) -->
+
+<html lang="en"> <!-- ✅ HTML5 ELEMENT + ATTRIBUTE (lang attribute) -->
+
+<head> <!-- ✅ HTML5 HEAD SECTION -->
+
+    <meta charset="UTF-8"> <!-- ✅ ATTRIBUTE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive HTML5 -->
+    
+    <title>HALL TICKET</title> <!-- ✅ HEAD ELEMENT -->
+
     <style>
+        /* (CSS already exists — unchanged) */
         table , th ,td {
             border: 1px solid rgb(0, 0, 0);
         }
@@ -35,67 +43,154 @@
             color: #333;
         }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
-<body>
-    <div class="container">
-        <div>
-            <img src="https://www.pngmart.com/files/23/Profile-PNG-Photo.png" alt="Image" width="110" height="120">
-            <table style="width:100%">
-                <tr>
-                    <th>Sr no.</th>
-                    <th>Subject</th>
-                    <th>Date of examination</th>
-                </tr>
-                <tr>
-                  <td align="center">1.</td>
-                  <td align="center">FSDL</td>
-                  <td align="center">10/2/26</td>
-                </tr>
-                <tr>
-                    <td align="center">2.</td>
-                    <td align="center">Mes</td>
-                    <td align="center">12/2/26</td>
-                </tr>
-                <tr>
-                    <td align="center">3.</td>
-                    <td align="center">O.S</td>
-                    <td align="center">14/2/16</td>
-                </tr>
-                <tr>
-                    <td align="center">4.</td>
-                    <td align="center">software enginnering</td>
-                    <td align="center">15/2/16</td>
-                </tr>
-            </table>
-        </div>
-        
-        <div class="details-box">
-            <h3>Student Details</h3>
-            <div class="detail-item">
-                <span class="detail-label">Name:</span> ________________
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Roll No:</span> ________________
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Registration:</span> ________________
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Class/Semester:</span> ________________
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Branch:</span> ________________
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Center Code:</span> ________________
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Seat No:</span> ________________
-            </div>
-        </div>
+
+<body> <!-- ✅ HTML5 BODY SECTION -->
+
+<!-- =====================================================
+     ✅ FORMATTING TAGS (added)
+===================================================== -->
+
+<h2><strong>Exam Hall Ticket</strong></h2> <!-- formatting element -->
+
+<div class="container">
+
+    <div>
+
+        <!-- =====================================================
+             ✅ IMAGE ELEMENT
+             attributes: src, alt, width, height
+        ===================================================== -->
+
+        <img src="https://www.pngmart.com/files/23/Profile-PNG-Photo.png"
+             alt="Profile Image"
+             width="110"
+             height="120">
+
+        <!-- =====================================================
+             ✅ TABLE ELEMENT
+        ===================================================== -->
+
+        <table style="width:100%">
+            <tr>
+                <th>Sr no.</th>
+                <th>Subject</th>
+                <th>Date of examination</th>
+            </tr>
+
+            <tr>
+                <td align="center">1.</td>
+                <td align="center">FSDL</td>
+                <td align="center">10/2/26</td>
+            </tr>
+
+            <tr>
+                <td align="center">2.</td>
+                <td align="center">Mes</td>
+                <td align="center">12/2/26</td>
+            </tr>
+
+            <tr>
+                <td align="center">3.</td>
+                <td align="center">O.S</td>
+                <td align="center">14/2/16</td>
+            </tr>
+
+            <tr>
+                <td align="center">4.</td>
+                <td align="center">software engineering</td>
+                <td align="center">15/2/16</td>
+            </tr>
+        </table>
+
+        <!-- =====================================================
+             ✅ LIST ELEMENT (added)
+        ===================================================== -->
+
+        <ul>
+            <li>Carry Hall Ticket</li>
+            <li>Carry ID Card</li>
+            <li>Reach Early</li>
+        </ul>
+
     </div>
+
+
+    <div class="details-box">
+
+        <h3>Student Details</h3>
+
+        <div class="detail-item">
+            <span class="detail-label">Name:</span> ________________
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Roll No:</span> ________________
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Registration:</span> ________________
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Class/Semester:</span> ________________
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Branch:</span> ________________
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Center Code:</span> ________________
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Seat No:</span> ________________
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ✅ HYPERLINK (added)
+===================================================== -->
+
+<p>
+    Visit Official Website:
+    <a href="https://example.com" target="_blank">Click Here</a>
+</p>
+
+
+<!-- =====================================================
+     ✅ FORMS (added HTML5 form)
+===================================================== -->
+
+<form>
+    Name: <input type="text" placeholder="Enter Name"><br><br>
+    Email: <input type="email" placeholder="Enter Email"><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+
+<!-- =====================================================
+     ✅ MULTIMEDIA (HTML5 video element added)
+===================================================== -->
+
+<video width="320" controls>
+    <source src="" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+
+<!-- =====================================================
+     ✅ FRAMES (iframe - modern HTML5 way)
+===================================================== -->
+
+<iframe src="https://example.com" width="300" height="200"></iframe>
+
+
 </body>
 </html>
