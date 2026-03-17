@@ -1,0 +1,133 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+  background: url("https://www.waveconsulting.co.uk/wp-content/uploads/2022/04/shutterstock_1347492785-scaled-e1624892988599-1024x532-1.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Card */
+.container {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Balance */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Summary Box */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.summary div {
+  text-align: center;
+  flex: 1;
+}
+
+.money {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.plus {
+  color: #00ff9d;
+}
+
+.minus {
+  color: #ff4d6d;
+}
+
+/* Form */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+form input:focus {
+  box-shadow: 0 0 5px #ffffff;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ff9d;
+  color: black;
+}
+
+/* Transaction List */
+.transaction {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.transaction:hover {
+  transform: translateX(5px);
+}
+
+.transaction.plus {
+  border-left: 5px solid #00ff9d;
+}
+
+.transaction.minus {
+  border-left: 5px solid #ff4d6d;
+}
+
+/* Delete Button */
+.transaction button {
+  background: #ff4d6d;
+  color: white;
+  width: auto;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.transaction button:hover {
+  background: #ff1e4d;
+}

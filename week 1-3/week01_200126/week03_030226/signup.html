@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Signup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 25px #00f5ff;
+      border-radius: 15px;
+      padding: 30px;
+      width: 100%;
+      max-width: 450px;
+    }
+    h2 {
+      color: #00f5ff;
+      text-align: center;
+    }
+    .btn-anime {
+      background: #00f5ff;
+      border: none;
+      color: black;
+    }
+    a {
+      color: #00f5ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>⚔️ Anime Signup ⚔️</h2>
+
+  <form id="signupForm">
+    <div class="mb-3">
+      <label>Username</label>
+      <input type="text" class="form-control" id="username">
+    </div>
+
+    <div class="mb-3">
+      <label>Email</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+
+    <div class="mb-3">
+      <label>Password</label>
+      <input type="password" class="form-control" id="password">
+    </div>
+
+    <div class="mb-3">
+      <label>Confirm Password</label>
+      <input type="password" class="form-control" id="confirmPassword">
+    </div>
+
+    <button class="btn btn-anime w-100">Sign Up</button>
+  </form>
+
+  <p class="text-center mt-3">
+    Already have an account? <a href="signin.html">Login</a>
+  </p>
+</div>
+
+<!-- COMMON JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
