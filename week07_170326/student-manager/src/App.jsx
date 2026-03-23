@@ -6,6 +6,7 @@ import StudentList from "./components/StudentList";
 import ThreeBackground from "./components/ThreeBackground";
 
 // ===== COMPONENT: Main App Component =====
+// Features marked: components, state, events, props, forms
 function App() {
   // ===== STATE: Managing application data =====
   const [students, setStudents] = useState(() => {
@@ -145,7 +146,7 @@ function App() {
       {/* ===== HERO SECTION ===== */}
       <section id="hero" className="section hero">
         <div className="hero-content">
-          <h1>Welcome to Student Manager</h1>
+          <h1>Welcome to <span>Student Manager</span></h1>
           <p>Manage your students with style and efficiency</p>
           <div className="hero-stats">
             {/* DISPLAYING STATE VALUES */}
@@ -173,6 +174,7 @@ function App() {
       <section id="add" className="section add-section">
         <div className="card">
           <h2>Add New Student</h2>
+          {/* FORM: Use StudentForm component for input form */}
           {/* COMPONENT & PROPS: Passing addStudent function as prop */}
           <StudentForm addStudent={addStudent} />
         </div>
